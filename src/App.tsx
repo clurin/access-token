@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Route, Routes } from 'react-router';
+import SingUpPage from './pages/SingUpPage';
+import LogInPage from './pages/LogInPage';
+import MenuBar from './features/components/MenuBar/MenuBar';
+import ShowUsers from './features/users/components/ShowUsers';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MenuBar />
+      <Routes>
+        <Route path="/singup" element={<SingUpPage />} />
+        <Route path="/login" element={<LogInPage />} />
+      </Routes>
+      <ShowUsers />
     </div>
-  );
+  )
 }
 
 export default App;

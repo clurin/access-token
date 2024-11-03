@@ -1,0 +1,21 @@
+.container {
+    margin: 10px;
+}
+
+.container ul {
+    display: flex; /* Выстраивает элементы <li> в линию */
+    gap: 10px; /* Расстояние между элементами */
+    list-style-type: none;
+    padding: 0;
+    margin: 20px;
+    justify-content: center;
+}
+
+.container a {
+    padding: 10px 15px;
+    border-radius: 15px;
+    color: #987935;
+    background-color: #010c01;
+    font-size: 2rem;
+    text-decoration: none;
+}
